@@ -1,0 +1,38 @@
+<h1>Lojas</h1>
+<br />
+
+<p> 
+    <a href="<?php echo  $this->url('loja-admin',array('controller'=>'instrumentos','action'=>'new')); ?>">Novo</a>
+</p>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Categoria</th>
+        <th>Valor</th>
+        <th>Marca</th>
+        <th>Ação</th>
+    </tr>
+    
+    <?php foreach($this->data as $entity): ?>
+    <tr>
+        <td><?php echo $entity->getId(); ?></td>
+        <td><?php echo $entity->getNome(); ?></td>
+        <td><?php echo $entity->getCategoria(); ?></td>
+        <td><?php echo $entity->getValor(); ?></td>
+        <td><?php echo $entity->getMarca(); ?></td>
+        <td>
+            <a href="<?php echo $this->url('loja-admin-interna',
+                  array('controller'=>'instrumentos','action'=>'edit','id'=>$entity->getID())); ?>">Editar</a>
+            <a href="<?php echo $this->url('loja-admin-interna',
+                  array('controller'=>'instrumentos','action'=>'delete','id'=>$entity->getID())); ?>">Deletar</a>
+        </td>
+   </tr>
+    
+    <?php endforeach; ?>
+        
+</table>
+<br />
+
+<?php echo $this->paginationControl($this->data,'Sliding', 'paginator'); ?>
