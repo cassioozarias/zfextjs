@@ -3,7 +3,9 @@ return array(
     'modules' => array(
         'DoctrineModule',
         'DoctrineORMModule',
-        'Loja'
+        'Application',
+        'Mod01',
+        'ModCategorias'
     ),
 
     'module_listener_options' => array(

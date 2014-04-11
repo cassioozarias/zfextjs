@@ -1,0 +1,3 @@
+Lembrem-se de baixar o framework (versão usada no WS foi a 4.0.2a) e descompactar dentro da pasta.
+Lembrando ainda que os exemplo são para didática. Entendam o que foi feito e façam as os seus códigos, para sistemas reais. Revejam o vídeo, dos 2 dias e good work :)
+Abraços

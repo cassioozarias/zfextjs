@@ -1,0 +1,19 @@
+<?php
+
+$menu = '{
+            "Instrumentos": [
+                {
+                    "id": 1,
+                    "nome": "RJ",
+                    "marca": "fender",
+                    "valor": "10",
+                },
+                {
+                    "id": 2,
+                    "nome": "RJ",
+                    "marca": "fender",
+                    "valor": "10",
+                }
+            ]
+        }';
+echo $menu;
