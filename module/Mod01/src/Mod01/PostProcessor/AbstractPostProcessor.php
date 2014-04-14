@@ -1,4 +1,4 @@
-v<?php
+<?php
 
 namespace Mod01\PostProcessor;
 
